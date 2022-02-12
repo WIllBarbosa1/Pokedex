@@ -1,0 +1,160 @@
+.flip-card {
+    height: 300px;
+    width: 200px;
+    background-color: transparent;
+    perspective: 1000px;
+    font-weight: bold;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    background-image: url('../../assets/backMark.png');
+    background-position: center;
+    background-size: cover;
+    font-size: small;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 5px solid #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12%;
+    background-color: #3272AD;
+}
+
+.flip-card-title {
+    color: #FFF;
+}
+
+.flip-card-back{
+    background-color: #F7C014;
+    color: #000;
+    transform: rotateY(180deg);
+}
+
+.poke-img {
+    width: 90%;
+}
+
+.status {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    background-color: antiquewhite;
+    list-style: none;
+    padding: 5%;
+    border: 2px solid #666;
+    border-radius: 10%;
+}
+
+.type-list{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10% 30%;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    box-shadow: 3px 2px #000;
+}
+
+.type-normal {
+    background-color: #666;
+}
+
+.type-fighting {
+    background-color: #766153;
+}
+
+.type-flying {
+    background-color: #708BDC;
+}
+
+.type-poison {
+    background-color: #8367c7;
+}
+
+.type-ground {
+    background-color: #BB9942;
+}
+
+.type-rock {
+    background-color: #AD974C;
+}
+
+.type-bug {
+    background-color: #88960D;
+}
+
+.type-ghost {
+    background-color: #555CA0;
+}
+
+.type-steel {
+    background-color: #9EA0AF;
+}
+
+.type-fire {
+    background-color: #d00000;
+}
+
+.type-water {
+    background-color: #007DCD;
+}
+
+.type-grass {
+    background-color: #2a9134;
+}
+
+.type-electric {
+    background-color: #EFA200;
+}
+
+.type-psychic {
+    background-color: #E34A76;
+}
+
+.type-ice {
+    background-color: #7DDBF7;
+}
+
+.type-dragon {
+    background-color: #176CC5;
+}
+
+.type-dark {
+    background-color: #4B3B2B;
+}
+
+.type-fairy {
+    background-color: #E8A3E2;
+}
+
+.type-unknown {
+    background-color: #6C6C6C;
+}
+
+.type-shadow {
+    background-color: #441388;
+}
