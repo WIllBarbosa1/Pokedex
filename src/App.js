@@ -15,7 +15,7 @@ function App() {
   }
 
   useEffect(() => {
-    getPokemon('slowbro');
+    getPokemon('togekiss');
   }, []);
 
   const Ditto = () => {
