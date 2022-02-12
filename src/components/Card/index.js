@@ -1,32 +1,22 @@
 import React from "react";
-import './card.css'
+import PokeStatus from "../PokeStatus";
+import PokeType from "../PokeType";
+import './Card.css'
 
 const Card = ({ pokemon }) => {
-
-    const pokeStatus = [];
-    const pokeTypes = [];
-
-    for (const status of pokemon.stats) {
-        pokeStatus.push(<li>{`${status.stat.name.toUpperCase()}: ${status.base_stat}`}</li>)
-
-    }
-
-    for (const type of pokemon.types) {
-        pokeTypes.push(<li className={`type-${type.type.name} type`}> {`${type.type.name}`} </li>)
-    }
 
     return (
         <div className="flip-card">
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <h2 className="flip-card-title" >{pokemon.name.toUpperCase()}</h2>
-                    <img className="poke-img-front" src={pokemon.sprites.other.dream_world.front_default} alt='Pokemon' />
-                    <ul className="type-list">{pokeTypes}</ul>
+                    <img className="poke-img-front" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`} alt='Pokemon' />
+                    <PokeType pokemon={pokemon} />
                 </div>
                 <div className="flip-card-back">
                     <h2 className="flip-card-title" >{pokemon.name.toUpperCase()}</h2>
                     <img className="poke-img-back" src={pokemon.sprites.front_default} alt='Pokemon' />
-                    <ul className="status" >{pokeStatus}</ul>
+                    <PokeStatus pokemon={pokemon} />
                 </div>
             </div>
         </div>

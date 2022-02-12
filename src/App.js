@@ -9,10 +9,9 @@ function App() {
 
   useEffect(() => {
     async function getPokemons() {
-      const { data: { results } } = await api.get('/pokemon');
+      const { data: { results } } = await api.get('/pokemon?offset=0&limit=24');
       const resp = await Promise.all(results.map(({ url }) => api.get(url)));
       const format = resp.map((req) => req.data);
-
       setPokemons(format);
     }
 
@@ -25,7 +24,7 @@ function App() {
       <div className="poke">
         {pokemons.length > 0 && pokemons.map((pokemon) => {
           return (
-            <Card pokemon={pokemon} />
+            <Card pokemon={pokemon} key={`listId_${pokemon.id}`} />
           )
         })}
       </div>

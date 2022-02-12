@@ -1,0 +1,11 @@
+
+.status {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    background-color: antiquewhite;
+    list-style: none;
+    padding: 5%;
+    border: 2px solid #666;
+    border-radius: 10%;
+}
