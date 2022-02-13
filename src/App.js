@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import api from "./services/api";
-import './App.css'
+import './app.css'
 import PokeNave from "./components/PokeNav";
 
 function App() {
