@@ -3,11 +3,34 @@
     min-height: 20vh;
 }
 
+.mainContent {
+    width: 90%;
+    margin: 5% auto;
+    /* margin-bottom: 5%; */
+    background-color: #6EA4BB;
+    padding: 3% 0;
+    box-shadow: 6px 3px #666;
+}
+
 .poke {
-    width: 70%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.sectionSobre {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobrePokeH2 {
+    font-size: 2.5rem;
+}
+
+.sobrePokeP {
+    font-size: 1.5rem;
 }
