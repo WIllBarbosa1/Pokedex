@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    .flip-card {
+        height: 40vw;
+        width: 24vw;
+    }
+    
+    .flip-card-title  {
+        font-size: 3rem;
+        color: #FFF;
+    }
+}

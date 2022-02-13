@@ -2,6 +2,7 @@ import React from "react";
 import PokeStatus from "../PokeStatus";
 import PokeType from "../PokeType";
 import './card.css'
+import './cardResponsive.css'
 import defaultImg from '../../assets/default.png'
 
 const Card = ({ pokemon }) => {

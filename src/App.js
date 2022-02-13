@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import api from "./services/api";
-import './app.css'
+import './app.css';
+import './appResponsive.css';
 import PokeNave from "./components/PokeNav";
 
 function App() {
@@ -32,8 +33,8 @@ function App() {
   return (
     <>
       <section className="sectionSobre">
-        <h2 className="sobrePokeH2">Sobre a Pokedex</h2>
-        <p className="sobrePokeP">Bem vindo a minha pokedex, ela ainda está em desenvolvimento, mas estou gostado de como esta ficando.</p>
+        <h2 >Sobre a Pokedex</h2>
+        <p >Bem vindo a minha pokedex, ela ainda está em desenvolvimento, mas estou gostado de como esta ficando.</p>
       </section>
       <div className="mainContent">
         <main className="poke">
@@ -46,7 +47,7 @@ function App() {
             : <img src='https://i.gifer.com/2iiJ.gif' alt='load' />
           }
         </main>
-        <PokeNave onPress={(numberPage) => setSelectedPage(numberPage)} pages={pages} />
+        <PokeNave setPage={(numberPage) => setSelectedPage(numberPage)} pages={pages} index={selectedPage} />
       </div>
     </>
   );

@@ -2,14 +2,16 @@
 .pokeIndexNav {
     list-style: none;
     background-color: aliceblue;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 2%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: solid 2px #666;
     border-radius: 10px;
+    padding: 5px;
     box-shadow: 3px 2px #000;
 }
 
@@ -17,8 +19,21 @@
     width: 5%;
     text-align: center;
     font-size: 1.5rem;
+    border: none;
+}
+
+.dots {
+    font-size: 2rem;
 }
 
 .pokeIndexNumber:hover {
     cursor: pointer;
+}
+
+.pokeSelected {
+    text-decoration: underline;
+}
+
+.pokeArrows {
+    /* padding: ; */
 }

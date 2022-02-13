@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+    
+    .headerIcon {
+        width: 15%;
+    }
+
+    .headerTitle {
+        font-size: 8rem;
+    }
+    
+    .headerNav {
+        width: 30%;
+    }
+    
+    .headerNavIl a{
+        font-size: 3rem;
+    }
+
+}

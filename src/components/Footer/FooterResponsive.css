@@ -1,0 +1,15 @@
+@media screen and (max-width: 1000px) {
+    
+    .footerStyled {
+        height: 8vh;
+    }
+
+    .footerText {
+        font-size: 3rem;
+    }
+    
+    .footerText a{
+        font-size: 3rem;
+    }
+    
+}

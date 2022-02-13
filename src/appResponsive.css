@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    
+    .sectionSobre h2{
+        font-size: 4.5rem;
+    }
+
+    .sectionSobre p{
+        font-size: 3.5rem;
+    }
+
+}

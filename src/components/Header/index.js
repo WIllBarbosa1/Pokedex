@@ -1,4 +1,5 @@
 import './Header.css';
+import './HeaderResponsive.css';
 import icon from '../../assets/iconHeader.png';
 
 const Header = () => {

@@ -20,16 +20,17 @@
 }
 
 .sectionSobre {
+    padding: 3%;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sobrePokeH2 {
+.sectionSobre h2{
     font-size: 2.5rem;
 }
 
-.sobrePokeP {
+.sectionSobre p{
     font-size: 1.5rem;
 }
