@@ -1,0 +1,47 @@
+.headerStyle {
+    display: flex;
+    justify-content: space-between;
+    background-color: #C04C4B;
+    color: #fff;
+}
+
+.headerIcon {
+    width: 10%;
+}
+
+.headerTitle {
+    font-size: 4rem;
+}
+
+.wrapperTitle {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav {
+    width: 15%;
+    display: flex;
+}
+
+.headerNavUl{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.headerNavIl {
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.headerNavIl:hover {
+    background-color: #464646;
+}
+
+.headerNavIl a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}

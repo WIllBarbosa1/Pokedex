@@ -1,0 +1,19 @@
+.footerStyled {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C04C4B;
+    color: #E7E7E6;
+}
+
+.footerText {
+    font-size: 2rem;
+}
+
+.footerText a{
+    color: #E7E7E6;
+    font-size: 2rem;
+    text-decoration: none;
+}

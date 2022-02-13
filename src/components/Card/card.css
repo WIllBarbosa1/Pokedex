@@ -1,6 +1,7 @@
 .flip-card {
-    height: 350px;
-    width: 220px;
+    height: 20vw;
+    width: 12vw;
+    margin: 1%;
     background-color: transparent;
     perspective: 1000px;
     font-weight: bold;
@@ -21,6 +22,7 @@
 
 
 .flip-card-title  {
+    font-size: 1.5rem;
     color: #FFF;
 }
 
@@ -32,9 +34,9 @@
     background-image: url('../../assets/backMark.png');
     background-position: center;
     background-size: cover;
-    background-color: #3272AD;
+    background-color: #60935D;
     backface-visibility: hidden;
-    border: 5px solid #666;
+    border: 5px solid #464646;
     padding: 12%;
     display: flex;
     flex-direction: column;
@@ -42,7 +44,7 @@
 }
 
 .flip-card-back {
-    background-color: #F7C014;
+    background-color: #F9A620;
     color: #000;
     transform: rotateY(180deg);
 }

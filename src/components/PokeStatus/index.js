@@ -1,4 +1,4 @@
-import './PokeStatus.css'
+import './PokeStatus.css';
 
 const PokeStatus = ({ pokemon }) => {
 

@@ -1,11 +1,11 @@
-import './PokeType.css'
+import './PokeType.css';
 
 const PokeType = ({ pokemon }) => {
 
     const typeList = [];
 
     for (const type of pokemon.types) {
-        typeList.push(<li className={`type-${type.type.name} type`} key={`typeListId${pokemon.id}_${type.type.name}`} > {`${type.type.name}`} </li>)
+        typeList.push(<li className={`type-${type.type.name} type`} key={`typeListId${pokemon.id}_${type.type.name}`} > {`${type.type.name.toUpperCase()}`} </li>)
     };
 
     return (
