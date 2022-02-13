@@ -1,7 +1,7 @@
 import React from "react";
 import PokeStatus from "../PokeStatus";
 import PokeType from "../PokeType";
-import './Card.css'
+import './card.css'
 import defaultImg from '../../assets/default.png'
 
 const Card = ({ pokemon }) => {
