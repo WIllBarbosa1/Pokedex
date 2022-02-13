@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    
+    .pokeIndexNumber {
+        font-size: 2rem;
+    }
+    
+    .dots {
+        font-size: 5rem;
+    }
+
+}
