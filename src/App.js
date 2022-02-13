@@ -37,11 +37,14 @@ function App() {
       </section>
       <div className="mainContent">
         <main className="poke">
-          {pokemons.length > 0 && pokemons.map((pokemon) => {
-            return (
-              <Card pokemon={pokemon} key={`listId_${pokemon.id}`} />
-            )
-          })}
+          {pokemons.length > 0
+            ? pokemons.map((pokemon) => {
+              return (
+                <Card pokemon={pokemon} key={`listId_${pokemon.id}`} />
+              )
+            })
+            : <img src='https://i.gifer.com/2iiJ.gif' alt='load' />
+          }
         </main>
         <PokeNave onPress={(numberPage) => setSelectedPage(numberPage)} pages={pages} />
       </div>
