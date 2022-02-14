@@ -1,0 +1,13 @@
+.searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBar input{
+    font-size: 1.5rem;
+}
+
+.searchBarInput{
+    width: 22.3vw;
+}

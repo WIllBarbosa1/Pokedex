@@ -7,5 +7,9 @@
     .sectionSobre p{
         font-size: 3.5rem;
     }
+    
+    .wrapperForm {
+        padding: 1% 8%;
+    }
 
 }

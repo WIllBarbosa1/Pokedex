@@ -34,3 +34,9 @@
 .sectionSobre p{
     font-size: 1.5rem;
 }
+
+.wrapperForm {
+    display: flex;
+    padding: 1% 5%;
+    justify-content: end;
+}

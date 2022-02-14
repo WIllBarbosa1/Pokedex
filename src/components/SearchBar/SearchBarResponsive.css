@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+    
+    
+    .searchBar input, .searchBar select, .searchBar select option {
+        font-size: 3rem;
+    }
+
+    .searchBarInput{
+        width: 35vw;
+    }
+
+
+}
