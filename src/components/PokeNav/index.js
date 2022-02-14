@@ -58,9 +58,9 @@ const PokeNave = ({ setPage, pages, index }) => {
 
     return (
         <ul className="pokeIndexNav">
-            <li><button className="pokeIndexNumber pokeArrows" onClick={() => previusPage(index)} key={`PokeNavIndex_Previus`}>{'<'}</button></li>
+            <li><button className="pokeIndexNumber" onClick={() => previusPage(index)} key={`PokeNavIndex_Previus`}>{'<'}</button></li>
             {pokeNave}
-            <li><button className="pokeIndexNumber pokeArrows" onClick={() => nextPage(index)} key={`PokeNavIndex_Next`}>{'>'}</button></li>
+            <li><button className="pokeIndexNumber" onClick={() => nextPage(index)} key={`PokeNavIndex_Next`}>{'>'}</button></li>
         </ul>
     )
 }
