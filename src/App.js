@@ -35,6 +35,12 @@ function App() {
   }
 
   useEffect(() => {
+    async function getPokemons() {
+      const { data: { results } } = await api.get(`/pokemon?offset=${selectedPage * offSet}&limit=${offSet}`);
+      const resp = await Promise.all(results.map(({ url }) => api.get(url)));
+      const format = resp.map((req) => req.data);
+      setPokemons(format);
+    }
     getMaxPokemonsNumber();
     getPokemons();
   }, [selectedPage]);
