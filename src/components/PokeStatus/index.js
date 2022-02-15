@@ -1,7 +1,7 @@
 import './PokeStatus.css';
 import './PokeStatusResponsive.css';
 
-const PokeStatus = ({ pokemon }) => {
+const PokeStatus = ({ pokemon, className }) => {
 
     const statusList = [];
 
@@ -10,7 +10,7 @@ const PokeStatus = ({ pokemon }) => {
     };
 
     return (
-        <ul className="status">{statusList}</ul>
+        <ul className={className}>{statusList}</ul>
     );
 
 }

@@ -1,5 +1,13 @@
 @media screen and (max-width: 1000px) {
     .type {
         font-size: 2rem;
+        max-width: 1%;
+        min-width: none;
+        margin: 1px 3px;
+        padding: 5% 20%;
+    }
+
+    .type-list {
+        flex-wrap: wrap;
     }
 }

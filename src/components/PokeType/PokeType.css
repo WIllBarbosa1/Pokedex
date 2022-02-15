@@ -1,19 +1,19 @@
 
 .type-list{
-    width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    min-width: 75px;
+    max-width: 50%;
 }
 
 .type {
     text-align: center;
-    width: 100%;
     display: flex;
     justify-content: center;
     color: #fff;
     padding: 10% 30%;
-    margin-bottom: 5px;
+    margin: 5px 3px;
     border-radius: 10%;
     box-shadow: 3px 2px #000;
 }

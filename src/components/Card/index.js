@@ -5,10 +5,13 @@ import './card.css'
 import './cardResponsive.css'
 import defaultImg from '../../assets/default.png'
 
-const Card = ({ pokemon }) => {
+const Card = ({ pokemon, onOpen, onModalPokemon }) => {
 
     return (
-        <div className="flip-card">
+        <div className="flip-card" onClick={() => {
+            onModalPokemon(pokemon);
+            onOpen();
+        }} >
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <h2 className="flip-card-title" >{pokemon.name.toUpperCase()}</h2>
@@ -25,7 +28,7 @@ const Card = ({ pokemon }) => {
                         currentTarget.src = defaultImg;
                         currentTarget.className = 'poke-img-back-error'
                     }} alt='Pokemon' />
-                    <PokeStatus pokemon={pokemon} />
+                    <PokeStatus pokemon={pokemon} className='status' />
                 </div>
             </div>
         </div>

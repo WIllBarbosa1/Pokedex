@@ -12,8 +12,8 @@ const SearchBar = ({ setResult }) => {
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit)} className='searchBar'>
-                <select {...register('PokeType')}>
-                    <option value={''} selected>Type</option>
+                <select {...register('PokeType')} defaultValue={''} >
+                    <option value={''}>Type</option>
                     <option value={'normal'}>Normal</option>
                     <option value={'fighting'}>Fighting</option>
                     <option value={'flying'}>Flying</option>

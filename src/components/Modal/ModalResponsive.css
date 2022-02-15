@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+    
+
+    .modalContent {
+        border: 3px solid #C04C4B;
+        width: 90%;
+    }
+
+    .modalContent h2 {
+        font-size: 4.5rem;
+    }
+    
+    .imgPokemonModal {
+        width: 100%;
+    }
+
+    .Status p{
+        font-size: 4rem;
+    }
+
+    .Status li{
+        font-size: 4rem;
+    }
+
+    
+    .WrapperPokeType {
+        height: 5vh;
+    }
+    
+}

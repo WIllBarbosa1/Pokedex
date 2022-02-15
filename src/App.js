@@ -5,14 +5,16 @@ import './app.css';
 import './appResponsive.css';
 import PokeNave from "./components/PokeNav";
 import SearchBar from "./components/SearchBar";
+import Modal from "./components/Modal";
 
 function App() {
 
   const [pokemons, setPokemons] = useState([]);
   const [pages, setPages] = useState(1);
   const [selectedPage, setSelectedPage] = useState(0);
-  const offSet = 24;
-
+  const step = 24;
+  const [pokemonModal, setPokemonModal] = useState(pokemons[0]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   async function getPokemonsByType(pokemonType) {
     const { data: { pokemon } } = await api.get(`/type/${pokemonType}`);
@@ -24,11 +26,11 @@ function App() {
 
   async function getMaxPokemonsNumber() {
     const { data: { count } } = await api.get('/pokemon');
-    setPages(Math.round(count / offSet));
+    setPages(Math.round(count / step));
   }
 
   async function getPokemons() {
-    const { data: { results } } = await api.get(`/pokemon?offset=${selectedPage * offSet}&limit=${offSet}`);
+    const { data: { results } } = await api.get(`/pokemon?offset=${selectedPage * step}&limit=${step}`);
     const resp = await Promise.all(results.map(({ url }) => api.get(url)));
     const format = resp.map((req) => req.data);
     setPokemons(format);
@@ -36,7 +38,7 @@ function App() {
 
   useEffect(() => {
     async function getPokemons() {
-      const { data: { results } } = await api.get(`/pokemon?offset=${selectedPage * offSet}&limit=${offSet}`);
+      const { data: { results } } = await api.get(`/pokemon?offset=${selectedPage * step}&limit=${step}`);
       const resp = await Promise.all(results.map(({ url }) => api.get(url)));
       const format = resp.map((req) => req.data);
       setPokemons(format);
@@ -46,8 +48,6 @@ function App() {
   }, [selectedPage]);
 
   async function getPokemonByName(name, pokeType) {
-    console.log('Name: ', name);
-    console.log('Type: ', pokeType);
     if (!name && !pokeType) {
       getPokemons();
       getMaxPokemonsNumber();
@@ -74,7 +74,7 @@ function App() {
           {pokemons.length > 0
             ? pokemons.map((pokemon) => {
               return (
-                <Card pokemon={pokemon} key={`listId_${pokemon.id}`} />
+                <Card pokemon={pokemon} key={`listId_${pokemon.id}`} onOpen={() => setIsModalOpen(true)} onModalPokemon={(pokemon) => setPokemonModal(pokemon)} />
               )
             })
             : <img src='https://i.gifer.com/2iiJ.gif' alt='load' />
@@ -82,6 +82,8 @@ function App() {
         </main>
         <PokeNave setPage={(numberPage) => setSelectedPage(numberPage)} pages={pages} index={selectedPage} />
       </div>
+      {isModalOpen && <Modal pokemon={pokemonModal} onClose={() => setIsModalOpen(false)} />
+      }
     </>
   );
 }
