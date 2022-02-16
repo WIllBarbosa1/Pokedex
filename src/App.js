@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import api from "./services/api";
-import './app.css';
-import './appResponsive.css';
 import PokeNave from "./components/PokeNav";
 import SearchBar from "./components/SearchBar";
 import Modal from "./components/Modal";
+import './app.css';
+import './app.responsive.css';
 
 function App() {
 

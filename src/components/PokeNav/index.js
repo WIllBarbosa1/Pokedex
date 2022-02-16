@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import './PokeNav.css';
-import './PokeNavResponsive.css';
+import './style.css';
+import './style.responsive.css';
 
 const PokeNave = ({ setPage, pages, index }) => {
 

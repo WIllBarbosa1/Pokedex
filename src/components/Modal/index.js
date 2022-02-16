@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import api from '../../services/api';
 import PokeType from '../PokeType';
 import PokeStatus from '../PokeStatus';
-import defaultImg from '../../assets/default.png'
-import './Modal.css';
-import './ModalResponsive.css';
+import defaultImg from '../../assets/default.png';
+import './style.css';
+import './style.responsive.css';
 
 const Modal = ({ pokemon, onClose }) => {
 

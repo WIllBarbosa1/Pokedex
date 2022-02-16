@@ -1,6 +1,6 @@
-import './Header.css';
-import './HeaderResponsive.css';
 import icon from '../../assets/iconHeader.png';
+import './style.css';
+import './style.responsive.css';
 
 const Header = () => {
 

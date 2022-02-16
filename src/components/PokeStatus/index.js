@@ -1,5 +1,5 @@
-import './PokeStatus.css';
-import './PokeStatusResponsive.css';
+import './style.css';
+import './style.responsive.css';
 
 const PokeStatus = ({ pokemon, className }) => {
 

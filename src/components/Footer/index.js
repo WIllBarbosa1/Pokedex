@@ -1,5 +1,5 @@
-import './Footer.css';
-import './FooterResponsive.css';
+import './style.css';
+import './style.responsive.css';
 
 const Footer = () => {
 

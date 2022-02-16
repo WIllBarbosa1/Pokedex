@@ -1,9 +1,8 @@
-import React from "react";
 import PokeStatus from "../PokeStatus";
 import PokeType from "../PokeType";
-import './card.css'
-import './cardResponsive.css'
 import defaultImg from '../../assets/default.png'
+import './style.css';
+import './style.responsive.css';
 
 const Card = ({ pokemon, onOpen, onModalPokemon }) => {
 

@@ -1,5 +1,6 @@
-import './PokeType.css';
-import './PokeTypeResponsive.css';
+import './style.css';
+import './style.responsive.css';
+
 
 const PokeType = ({ pokemon }) => {
 
