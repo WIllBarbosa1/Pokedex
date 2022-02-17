@@ -6,7 +6,7 @@ const SearchBar = ({ setResult }) => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = ({ searchText, PokeType }) => {
-        setResult(searchText, PokeType);
+        setResult(searchText.toLowerCase(), PokeType);
     }
 
     return (
